@@ -9,7 +9,7 @@
 <body>
     <div style ="border: 2px solid black;" >
         <h1>Cadastro Novo Usuário</h1>
-        <form action="cadastro.php" method ="post">
+        <form action="usuario_cadastro.php" method ="post">
             <label for="">Nome Completo</label>
             <input type="text" name = "nomeCompleto">
             <br>
@@ -17,11 +17,13 @@
             <input type="text" name = "numeroRegistro">
             <br>
             <label for="">Nivel de Permissao</label>
-            <select name="nivelPermissao" id="">
+            <input type="text" name ="nivelPemisao">
+            <br>
+           <!-- <select name="nivelPermissao" id="">
                 <option value="primeiro">Primeiro</option>
                 <option value="segundo">Segundo</option>
                 <option value="Terceiro">Terceiro</option>
-            </select>
+            </select> !--> 
             <br>
             <label for="">Nome Usuário</label>
             <input type="text" name = "nomeUsuario">
