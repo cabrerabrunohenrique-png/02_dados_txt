@@ -25,9 +25,31 @@
             <button type="submit">enviar</button>
             <button type="submit">limpar</button>
         </form>
-
-
+        
     </div>
+    <hr>
+    <br>
+    <h2> listagem de albus</h2>
+
+    <?php
+
+    //Aqui estou criando uma variavel, pois eu irei chamar ele mais de 1x
+    $arquivo = "AlbumCadastro_bd.txt";
+
+    //aqui eu estou usando o comando ABRIR para "FOPEN". Dentro do comando eu coloco o tipo
+    //nesse caso sera o R de "read"
+    $arquivo_aberto = fopen($arquivo,"r");
+
+    //aqui eu estou usando o comando de LER para FREAD. Dentro do comando eu preciso colocar o nome do arquivo e o tamanho
+    //  eu coloco outro comando
+    // filesize vai mostrar o tamanho do aquivo
+    $conteudo = fread($arquivo_aberto,filesize($arquivo));
+    echo $conteudo;
+    
+    //fechar o que foi aberto
+    fclose($arquivo_aberto);
+
+    ?>
     
 </body>
 </html>

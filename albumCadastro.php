@@ -6,7 +6,7 @@ $anoLancamento = $_POST["anoLancamento"];
 
 //esse comando serve para criar um arquivo em TXT.
 // o "A" é a configuracao para receber sem apagar
-$arquivo = fopen("cadastroAlbum_bd.txt","a");
+$arquivo = fopen("AlbumCadastro_bd.txt","a");
 //Aqui serve para configurar como sera escrito no arquivo
 fwrite($arquivo,"$artista;$nomeAlbum;$anoLancamento \n" );
 
