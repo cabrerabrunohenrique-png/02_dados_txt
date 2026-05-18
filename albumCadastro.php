@@ -13,7 +13,11 @@ fwrite($arquivo,"$artista;$nomeAlbum;$anoLancamento \n" );
 //aqui ele vai fechar o comando, sempre que abre tem que fechar
 fclose($arquivo);
 
+header('location: AlbumFormulario.php');
+
 echo"$artista, $nomeAlbum, $anoLancamento";
+
+
 
 
 

@@ -50,6 +50,32 @@
     fclose($arquivo_aberto);
 
     ?>
+
+<br>
+<br>
+
+<h1> listagem de albus</h1>
+
+    <?php
+
+    $arquivo1 = fopen("AlbumCadastro_bd.txt","r");
+
+    //comando padrao
+           //codigo para contar "linha" no bloco de nota.
+    while(!feof($arquivo1)){
+
+        $linha = fgets($arquivo1);
+        echo "$linha <br>";
+    
+
+    }
+    fclose($arquivo1);
+
+    
+
+
+
+    ?>
     
 </body>
 </html>
