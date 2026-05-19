@@ -28,6 +28,19 @@
 
 
     </div>
+
+    <?php
+
+    $arquivoAlunoCadastrobd = fopen("alunoCadastro_bd.txt","r");
+
+    while (!feof($arquivoAlunoCadastrobd)){
+
+    $linha = fgets($arquivoAlunoCadastrobd);
+    echo $linha;
+
+    }
+
+    ?>
     
 </body>
 </html>

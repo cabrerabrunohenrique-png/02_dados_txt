@@ -8,5 +8,10 @@ $arquivo = fopen("alunoCadastro_bd.txt","a");
 fwrite($arquivo, "$ra, $nome, $idade \n");
 fclose($arquivo);
 
+
+header('location: alunoFormulario.php');
+
 echo "$ra $nome $idade";
+
+
 ?>
